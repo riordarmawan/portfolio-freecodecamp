@@ -1,6 +1,14 @@
 .jumbotron {
   padding-top: 6rem;
   background-color: #e2edff;
+  height: 100vh;
+  position: relative;
+}
+
+.wave1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 #projects {
@@ -21,7 +29,7 @@ section {
 }
 
 .keyboard-box::before {
-  content: 'MY';
+  content: "MY";
   position: absolute;
   color: #fff;
   font-size: 6em;
@@ -39,7 +47,7 @@ section {
 }
 
 .keyboard-box::after {
-  content: 'KEYBOARD';
+  content: "KEYBOARD";
   position: absolute;
   color: #fff;
   font-size: 4.3em;
@@ -100,4 +108,11 @@ section {
 
 .keyboard-box:hover .keyboard-img {
   transform: translate3d(-50%, -52%, 100px) rotate(5deg) scale(1.2);
+}
+
+/* Media Query ketika dibuka di Mobile */
+@media (max-width: 576px) {
+  .btn-github {
+    width: 80%;
+  }
 }
